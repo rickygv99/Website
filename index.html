@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+    <title>Richard Grannis-Vu</title>
+
+    <link href='css/style.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on('click', function (event) {
+
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function () {
+
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+    </script>
+
+  </head>
+
+  <body>
+
+    <nav>
+      <a href='#about'>ABOUT</a>
+      <a href='#projects'>PROJECTS</a>
+      <a href='#background'>BACKGROUND</a>
+      <a href='#contact'>CONTACT</a>
+    </nav>
+
+    <header>
+      <div class='center'>
+        <p>- RICHARD GRANNIS-VU -</p>
+      </div>
+    </header>
+
+    <section id='about'>
+      <br><br><br>
+      <div class='center-horizontal'>
+        <p class='title'>- RICHARD GRANNIS-VU -</p>
+      </div>
+      <br>
+      <div class='center-horizontal'>
+        <p class='title'>Student. Programmer. Blockchain enthusiast.</p>
+      </div>
+      <br><br>
+      <img src='images/profilepicture.jpeg' alt='Profile picture'>
+      <br>
+      <div class='center-horizontal'>
+        <p class='description'>I am a student at Stanford University, an experienced programmer, and always curious to learn something new. I create a variety of different applications, from video games to blockchain technologies.</p>
+      </div>
+    </section>
+
+    <section id='projects'>
+      <br><br><br>
+      <div class='center-horizontal'>
+        <p class='title'>- PROJECTS -</p>
+      </div>
+      <div class='center-horizontal'>
+        <p class='description'>I am <strong>experienced</strong> and <strong>adaptable</strong>.</p>
+      </div>
+      <div class='center-horizontal'>
+        <p class='description'>I have skill with a variety of technologies. I can work in Java, C, C++, Python, HTML, CSS, JavaScript, Ruby, and Solidity. I am proficient in <strong>all aspects</strong> of the development process, from product design to programming to testing to marketing. I have experience using tools ranging from web technologies such as jQuery and AJAX to internal development tools such as Git and Grunt.</p>
+      </div>
+      <br><br>
+      <div class='columns'>
+        <div class='column-2'>
+          <div class='center'>
+            <img class='logo' src='images/verifylogo.svg' alt='verifylogo'>
+          </div>
+        </div>
+        <div class='column-2'>
+          <p class='item-title'>Verify LTC</p>
+          <p class='item-header'>Software Engineering Intern | 2018 | Current</p>
+          <p class='item-description'>I am leading the creation of a reputation protocol and payment system built on the Etheruem blockchain.</p>
+        </div>
+      </div>
+      <br>
+      <div class='columns'>
+        <div class='column-2'>
+          <div class='center'>
+            <img class='logo' src='images/perceptronicssolutionslogo.jpg' alt='perceptronicssolutionslogo'>
+          </div>
+        </div>
+        <div class='column-2'>
+          <p class='item-title'>Perceptronics Solutions</p>
+          <p class='item-header'>Software Engineering Intern | 2014</p>
+          <p class='item-description'>I was a member of a team simulating network evolution given various constraints and parameters.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id='background'>
+      <br><br><br>
+      <div class='center-horizontal'>
+        <p class='title'>- BACKGROUND -</p>
+      </div>
+      <br><br>
+      <div class='columns'>
+        <div class='column-2'>
+          <div class='center'>
+            <img class='logo' src='images/stanfordlogo.png' alt='stanfordlogo'>
+          </div>
+        </div>
+        <div class='column-2'>
+          <p class='item-title'>Stanford University</p>
+          <p class='item-header'>Prospective Bachelor of Science, Computer Science | 2017 - Present</p>
+          <p class='item-description'>I am currently studying at Stanford University and am on track to graduate in June of 2021 with a degree in computer science. In my free time, I enjoy writing articles for the Stanford Daily newspaper, taking part in the blockchain club, and spending time with friends.</p>
+        </div>
+      </div>
+      <br>
+      <div class='columns'>
+        <div class='column-2'>
+          <div class='center'>
+            <img class='logo' src='images/stanfordohslogo.svg' alt='stanfordohslogo'>
+          </div>
+        </div>
+        <div class='column-2'>
+          <p class='item-title'>Stanford Online High School</p>
+          <p class='item-header'>Student | 2011 - 2017</p>
+          <p class='item-description'>I attended Stanford Online High School during my middle school and high school years. I studied a variety of fields, including computer science, mathematics, physics, and philosophy. I won a National Merit Scholarship and, in my senior year of high school, I won the Division Award in Computer Science.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id='contact'>
+      <br><br><br>
+      <div class='center-horizontal'>
+        <p class='title'>- CONTACT -</p>
+      </div>
+      <br><br>
+      <div class='form-container'>
+        <form>
+          <label for='name'>Name</label>
+          <input type='text' name='name' placeholder='Your name..'>
+
+          <label for='email'>Email</label>
+          <input type='email' name='email' placeholder='Your email..'>
+
+          <label for='subject'>Subject</label>
+          <textarea name='subjet' placeholder='Write something here..' style='height: 200px'></textarea>
+
+          <input type='submit' value='Submit'>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class='center-horizontal'>
+        <p id='follow-text'>Follow me on social media!</p>
+        <a href='https://www.facebook.com/rickygv99' class='fa fa-facebook'></a>
+        <a href='https://www.linkedin.com/in/richard-grannis-vu/' class='fa fa-linkedin'></a>
+      </div>
+      <div class='center-horizontal'>
+        <p id='copyright-text'>&copy; 2018. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </body>
+
+</html>

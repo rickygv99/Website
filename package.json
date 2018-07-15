@@ -15,5 +15,16 @@
   "bugs": {
     "url": "https://github.com/rickygv99/Website/issues"
   },
-  "homepage": "https://github.com/rickygv99/Website#readme"
+  "homepage": "https://github.com/rickygv99/Website#readme",
+  "devDependencies": {
+    "autoprefixer": "^8.6.5",
+    "grunt": "^1.0.3",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-postcss": "^0.9.0",
+    "sass": "^1.9.2"
+  }
 }
