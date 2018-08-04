@@ -72,5 +72,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-postcss')
 
   // Default task(s)
-  grunt.registerTask('default', ['connect:livereload', 'watch'])
+  grunt.registerTask('default', ['sass', 'postcss', 'cssmin', 'connect:livereload', 'watch'])
 }
