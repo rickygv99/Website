@@ -10,8 +10,9 @@
 
     <link href='main.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <script>
       $(document).ready(function () {
         // Add smooth scrolling to all links
@@ -47,7 +48,6 @@
       <a href='#about'>ABOUT</a>
       <a href='#projects'>PROJECTS</a>
       <a href='#background'>BACKGROUND</a>
-      <a href='#contact'>CONTACT</a>
     </nav>
 
     <header>
@@ -63,13 +63,13 @@
       </div>
       <br>
       <div class='center-horizontal'>
-        <p class='title'>Student. Programmer. Blockchain enthusiast.</p>
+        <p class='title'>Student. Developer. Entrepreneur.</p>
       </div>
       <br><br>
-      <img src='images/profilepicture.jpeg' alt='Profile picture'>
+      <img src='images/profilepicture.jpeg' alt='Profile picture' class='rounded-circle'>
       <br>
       <div class='center-horizontal'>
-        <p class='description'>I am a student at Stanford University, an experienced programmer, and always curious to learn something new. I create a variety of different applications, from video games to blockchain technologies.</p>
+        <p class='description'>I am a student at Stanford University, an experienced programmer and always curious to learn something new. I create a variety of different applications, from blockchain technologies to mobile apps to college planning tools.</p>
       </div>
     </section>
 
@@ -78,13 +78,20 @@
       <div class='center-horizontal'>
         <p class='title'>- PROJECTS -</p>
       </div>
-      <div class='center-horizontal'>
-        <p class='description'>I am <strong>experienced</strong> and <strong>adaptable</strong>.</p>
-      </div>
-      <div class='center-horizontal'>
-        <p class='description'>I have skill with a variety of technologies. I can work in Java, C, C++, Python, HTML, CSS, JavaScript, Ruby, and Solidity. I am proficient in <strong>all aspects</strong> of the development process, from product design to programming to testing to marketing. I have experience using tools ranging from web technologies such as jQuery and AJAX to internal development tools such as Git and Grunt.</p>
-      </div>
       <br><br>
+      <div class='columns'>
+        <div class='column-2'>
+          <div class='center'>
+            <img class='logo' src='images/stanplanlogo.jpeg' alt='stanplanlogo'>
+          </div>
+        </div>
+        <div class='column-2'>
+          <p class='item-title'>StanPlan</p>
+          <p class='item-header'>Co-founder | 2019-Present</p>
+          <p class='item-description'>StanPlan is a tool designed to help Stanford students create four-year course plans by guiding them through the process of course selection and automatically generating schedules for them that meet their requirements.</p>
+        </div>
+      </div>
+      <br>
       <div class='columns'>
         <div class='column-2'>
           <div class='center'>
@@ -93,8 +100,8 @@
         </div>
         <div class='column-2'>
           <p class='item-title'>Verify LTC</p>
-          <p class='item-header'>Software Engineering Intern | 2018 | Current</p>
-          <p class='item-description'>I am leading the creation of a reputation protocol and payment system built on the Ethereum blockchain.</p>
+          <p class='item-header'>Software Engineering Intern | 2018</p>
+          <p class='item-description'>I worked with the CEO to lead the development of Verify Protocol, a payment system that allows buyers to purchase products, both digital and physical, with ERC 20 cryptocurrencies on a reputation-based protocol. I delivered the product ahead of schedule and a beta version of the product was released in 2018.</p>
         </div>
       </div>
       <br>
@@ -107,7 +114,7 @@
         <div class='column-2'>
           <p class='item-title'>Perceptronics Solutions</p>
           <p class='item-header'>Software Engineering Intern | 2014</p>
-          <p class='item-description'>I was a member of a team simulating network evolution given various constraints and parameters.</p>
+          <p class='item-description'>Perceptronics Solutions is a Defense Department subcontractor. During my time there, I helped simulate network evolution given various constraints and parameters.</p>
         </div>
       </div>
     </section>
@@ -127,7 +134,7 @@
         <div class='column-2'>
           <p class='item-title'>Stanford University</p>
           <p class='item-header'>Prospective Bachelor of Science, Computer Science | 2017 - Present</p>
-          <p class='item-description'>I am currently studying at Stanford University and am on track to graduate in June of 2021 with a degree in computer science. In my free time, I enjoy writing articles for the Stanford Daily newspaper, taking part in the blockchain club, and spending time with friends.</p>
+          <p class='item-description'>I am studying for a Bachelor of Science in Computer Science at Stanford University with an anticipated graduation date of June, 2021. I am an active member of Lambda Phi Epsilon and am the Financial Officer of Stanford Quidditch. I also enjoy writing poetry, taking part in the blockchain club and spending time with friends.</p>
         </div>
       </div>
       <br>
@@ -143,38 +150,21 @@
           <p class='item-description'>I attended Stanford Online High School during my middle school and high school years. I studied a variety of fields, including computer science, mathematics, physics, and philosophy. I won a National Merit Scholarship and, in my senior year of high school, I won the Division Award in Computer Science.</p>
         </div>
       </div>
-    </section>
-
-    <section id='contact'>
-      <br><br><br>
-      <div class='center-horizontal'>
-        <p class='title'>- CONTACT -</p>
-      </div>
       <br><br>
-      <div class='form-container'>
-        <form>
-          <label for='name'>Name</label>
-          <input type='text' name='name' placeholder='Your name..'>
-
-          <label for='email'>Email</label>
-          <input type='email' name='email' placeholder='Your email..'>
-
-          <label for='subject'>Subject</label>
-          <textarea name='subjet' placeholder='Write something here..' style='height: 200px'></textarea>
-
-          <input type='submit' value='Submit'>
-        </form>
-      </div>
     </section>
 
     <footer>
       <div class='center-horizontal'>
-        <p id='follow-text'>Follow me on social media!</p>
-        <a href='https://www.facebook.com/rickygv99' class='fa fa-facebook'></a>
-        <a href='https://www.linkedin.com/in/richard-grannis-vu/' class='fa fa-linkedin'></a>
+        <a href='https://www.facebook.com/rickygv99' class='fa fa-facebook fa-2x'></a>
+        <a href='https://www.twitter.com/rickygv99' class='fa fa-twitter fa-2x'></a>
+        <a href='https://www.instagram.com/rickygv99' class='fa fa-instagram fa-2x'></a>
+        <a href='https://www.linkedin.com/in/richard-grannis-vu/' class='fa fa-linkedin fa-2x'></a>
       </div>
       <div class='center-horizontal'>
-        <p id='copyright-text'>&copy; 2019. All rights reserved.</p>
+        <p>Email: rickygv <i>at</i> stanford.edu</p>
+      </div>
+      <div class='center-horizontal'>
+        <p>&copy; 2019. All rights reserved.</p>
       </div>
     </footer>
 
